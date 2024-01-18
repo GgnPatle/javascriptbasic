@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        function myFunction1(x,y,){ //x and y are the actual argument 
+            return x+y;
+        }
+        let r1=myFunction1(10,20);// 10 and 20 are the actual parameter
+        //alert(r1);//functiom calling 
+        //alert is predefine function
+        console.log(r1);
+        var students=['patle','gagan','sky',"apoorva"];
+        let class1=[12,3,5,8,10];
+        console.log(students,class1 );
+        console.log(class1);
+        function greetings(x){
+            return x;
+        }
+        let g=greetings("gagan"+students[1]);//yha sirf 1 ko hi grret kar rhe hai 
+
+        console.log(g);
+
+        function gretAll(m){
+            console.log("hello student of nmims"+" "+m);
+        }
+        
+        /////for loop
+        for(var i=4;i=>0;i--){//yeh loop infinte pe ja rha h
+            gretAll(students[i]);
+
+        }
+        for(var i=4;i>=0;i--){//yeh loop infinte pe nhi ja rha h
+            gretAll(students[i]);
+
+        }
+        
+    </script>
+    </head>
+    <body>
+    <script>
+
+    </script>  
+    </body>
+</html>
