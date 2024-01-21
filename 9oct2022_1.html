@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        // creating js object
+        let a={
+            //2 log rehte hai object me
+            //1)propety:"value"
+            //2)function/method
+            name:"sky",
+            frnds:['a','b','c','d'],
+            myfuction_name:function (){
+                console.log("my name is" + this.name);
+            },
+            myfunction_name2:()=>{
+                
+            }
+        }
+        console.log(a.myfuction_name());
+        let b=[{
+            //2 log rehte hai object me
+            //1)propety:"value"
+            //2)function
+            name:"gapu",
+            frnds:['a','b','c','d']
+        }];
+        console.log(a.name);
+        console.log(a.frnds[1]);
+        for(var x=0;x<=a.frnds.length;x++){
+            console.log(a.frnds[x]);
+        }
+
+        // for each loop
+        //for each loop me array hona jaruri hai object pe kaam nhi krta yeh
+        b.forEach(element => {
+           console.log(element); 
+        });
+        console.log("*********************************");
+        console.log(b);
+        /*new for loop
+        for(varable of iterable){
+            code part
+        }
+        */
+        var xyz=['a','b','c','d'];
+       
+      for(c of xyz){
+            console.log(c);
+       }
+    </script>
+    </head>
+    <body>
+     <script>
+
+     </script>   
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+    <script>
+        let Myobject={
+            //property
+            name:"Gagan Chandrashekhar Patle",
+            bb:"hello from bb",
+            myfunction_p:function(){
+                console.log(this.name);
+            },
+            //fat arrow me this keyword kaam nhi karta
+            myfunction_p1: (msg)=>{
+                console.log("hello how are you" + msg +" "+this.bb);
+            },
+            
+            myfunction_p2:function(msg1)
+            {
+                console.log("how are you " +" "+msg1+" "+this.bb);
+            },
+           
+        };
+        Myobject.myfunction_p1("Gagan");
+        Myobject.myfunction_p2("GaganP");
+
+    </script> 
+    </body>
+</html>
