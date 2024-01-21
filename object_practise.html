@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    
+    <body>
+        <script>
+                let Practise_object={ 
+                    //yeh hai object js ka object 
+                    //js ke object ke andar property : value me store krti h
+
+                    "name":"gagan patle",
+                    "surname":"patle",
+                    middlename:'chandrashekhar',
+                    gagan_paternal:["omkarsingh","jitsingh","dharmaraj","choti_bua","badi_bua","manjhli_bua"], 
+                    //array using inside js object
+                    gagan_maternal:["badimasi","anjumasi","rewamasi","ranimasi","maa","bhagvatimasi","rashimasi","chotumasi"],
+                   //  try kar rhe h ki object ke andar object without array ke bina use kr skte h
+                    omkarsingh:{ 
+                        o_beta:"bablu",
+                        o_beti:["pappi","munny"]
+                    },
+                    //niche jo object bana rha vo aaray us krke bnaye h
+                    omkarsingh1:[{
+                        o_beta1:"bablu1",
+                        o_beti1:["munny1","pappi1"]
+                    },
+                    {
+                        o_beta1:"bablu2",
+                        o_beti1:["munny2","pappi2"]
+                    }
+                        ]
+                };
+                console.log(Practise_object.name);
+                console.log(Practise_object.surname);
+                console.log(Practise_object.middlename);
+                console.log(Practise_object.gagan_maternal);
+                console.log(Practise_object.gagan_maternal);
+                console.log(Practise_object.omkarsingh1[0].o_beta1 + " "+Practise_object.omkarsingh1[0].o_beti1);
+                for(var i=0;i<Practise_object.omkarsingh1.length;i++){
+                    console.log(Practise_object.omkarsingh1[i].o_beta1+ " "+ Practise_object.omkarsingh1[i].o_beti1);
+                }
+                // isss niche wale code see yeh confirm ho gya ki js object ke andar array and object bhi bana skte hai and call kar sakte h
+                console.log(Practise_object.omkarsingh.o_beta);
+
+                console.log("***********************************");
+                var xx=["array ke andar js object",Practise_object];
+                console.log(xx[0])
+                console.log(xx[1])
+        </script>
+</body>
+</html>
